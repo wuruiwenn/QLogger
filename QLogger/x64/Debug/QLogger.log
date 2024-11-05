@@ -1,0 +1,6 @@
+﻿E:\myComputer\visual stdio 2019\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(499,5): warning MSB8004: Output 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
+   Qt/MSBuild: 3.3.0.13
+  Reading Qt configuration (E:/myComputer/QT_5.14.2/5.14.2/msvc2017_64/bin/qmake)
+   Qt: 5.14.2
+  main.cpp
+  QLogger.vcxproj -> E:\myComputer\QT_VS_projects\QLogger\output\bin\QLogger.exe
