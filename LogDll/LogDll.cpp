@@ -64,17 +64,17 @@ void LogDll::saveLog(QString& logInfo)
 	{
 		return;
 	}
-	QDir tmpDir(logFilePath);
-	if (!tmpDir.exists())
-	{
-		tmpDir.mkpath(".");
+
+	logDir.setPath(logFilePath+"/logs");
+	if (!logDir.exists()) {
+		logDir.mkpath(logFilePath + "/logs");  // 递归创建目录
 	}
-	QString logFileName = QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss") + ".txt";
+	QString logFileName = QDateTime::currentDateTime().toString("yyyy-MM-dd  hh.mm.ss") + ".txt";//windows下，文件名不能有冒号":"
 	QString logFileAbsolutePath = logDir.absoluteFilePath(logFileName);
 
 	//创建并打开日志文件
 	QFile logFile(logFileAbsolutePath);
-	if (logFile.open(QIODevice::ReadWrite | QIODevice::Append))
+	if (logFile.open(QIODevice::OpenModeFlag::Append))
 	{
 		QTextStream stream(&logFile);
 		stream.setCodec("UTF-8");
