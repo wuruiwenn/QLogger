@@ -3,4 +3,5 @@
   Reading Qt configuration (E:/myComputer/QT_5.14.2/5.14.2/msvc2017_64/bin/qmake)
    Qt: 5.14.2
   LogDll.cpp
+    正在创建库 ..\output\bin\LogDll.lib 和对象 ..\output\bin\LogDll.exp
   LogDll.vcxproj -> E:\myComputer\QT_VS_projects\QLogger\output\bin\LogDll.dll

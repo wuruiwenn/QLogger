@@ -10,7 +10,8 @@ int main(int argc, char *argv[])
     LogDll& log = LogDll::GetInstance();
 
     log.init(logPath);
-    log.writeLog(LogLevel::ERROR,"Main.cpp","main",16,u8"日志信息");
+    log.writeLog(LogLevel::ERROR,"Main.cpp","main",16,u8"日志信息——1");
+    log.writeLog(LogLevel::ERROR,"Main.cpp","main",16,u8"日志信息——2");
 
     return a.exec();
 }
